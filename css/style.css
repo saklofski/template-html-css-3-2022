@@ -130,7 +130,8 @@ a {
     position: relative;
     /* position: fixed;
     width: 100%;
-    top: 0; */  
+    top: 0;   
+    z-index: 1;  */
 }
 
 .header .container {
@@ -1003,6 +1004,7 @@ a {
     top: 0;
     height: 100%;
     background-color: var(--main-color);
+    transition: var(--main-transition-dure);
 }
 
 /* End skills */
@@ -1861,6 +1863,26 @@ background-color: var(--main-color-alt);
     color: white;
     margin: 50px 0 0;
     border-top: 1px solid #444;
+}
+
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -50px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 4px;
+    font-family: Arial, Tahoma;
+    margin-right: 5px; 
+    cursor: pointer;
+    transition: var(--main-transition-dure);
+}
+
+.up.show {
+    right: 10px;
 }
 
 /* End Footer */
